@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="13.972" tests="3" skipped="0" failures="1" errors="0">
+<testcase classname="Hello Cucumber" name="Print Hello from Cucumber" time="3.418">
+<system-out><![CDATA[
+Given I have a working Cucumber JVM setup...................................passed
+When I run my first step....................................................passed
+Then I should see Hello Cucumber in the output..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login via data/locators coming from Excel" name="Successful login using valid credentials" time="7.038">
+<system-out><![CDATA[
+Given I am on the Sauce Demo login page.....................................passed
+When I login with excel credentials "validUser" and "validPass".............passed
+Then I should see the Products page.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login via data/locators coming from Excel" name="Unsuccessful login using invalid credentials" time="1.329">
+<failure type="java.lang.AssertionError" message="[Verify error banner text] 
+Expecting actual:
+  &quot;Epic sadface: Username and password do not match any user in this service&quot;
+to contain:
+  &quot;@failure @screenshot
+Scenario: Intentional failure to test screenshot capture
+Given I am on the Sauce Demo login page
+When I login with excel credentials &quot;validUser&quot; and &quot;validPass&quot;
+Then I should see an error banner containing&quot; ">
+<![CDATA[java.lang.AssertionError: [Verify error banner text] 
+Expecting actual:
+  "Epic sadface: Username and password do not match any user in this service"
+to contain:
+  "@failure @screenshot
+Scenario: Intentional failure to test screenshot capture
+Given I am on the Sauce Demo login page
+When I login with excel credentials "validUser" and "validPass"
+Then I should see an error banner containing" 
+	at com.provana.stepdefinitions.LoginExcelSteps.i_should_see_error_banner(LoginExcelSteps.java:42)
+	at ✽.I should see an error banner containing(classpath:com/provana/features/login_excel.feature:16)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I am on the Sauce Demo login page.....................................passed
+When I login with excel credentials "invalidUser" and "invalidPass".........passed
+Then I should see an error banner containing................................failed
+]]></system-out>
+</testcase>
+</testsuite>

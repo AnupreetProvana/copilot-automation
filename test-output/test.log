@@ -1,0 +1,17 @@
+[2025-06-23 15:00:59] [main] INFO  com.provana.utils.DriverFactory - config.properties loaded successfully from path: com/provana/config/config.properties
+[2025-06-23 15:01:00] [main] INFO  com.provana.hooks.Hooks - driver.quit.mode = perFeature
+[2025-06-23 15:01:00] [main] INFO  com.provana.hooks.Hooks - New feature detected – restarting driver ( → hello.feature)
+[2025-06-23 15:01:00] [main] INFO  com.provana.utils.DriverFactory - Initializing WebDriver...
+[2025-06-23 15:01:00] [main] INFO  com.provana.utils.DriverFactory - Download directory cleaned.
+[2025-06-23 15:01:03] [main] INFO  com.provana.utils.DriverFactory - WebDriver initialized successfully.
+[2025-06-23 15:01:04] [main] INFO  com.provana.stepdefinitions.HelloSteps - Verified working Cucumber JVM setup.
+[2025-06-23 15:01:04] [main] INFO  com.provana.stepdefinitions.HelloSteps - Running first step.
+[2025-06-23 15:01:04] [main] INFO  com.provana.stepdefinitions.HelloSteps - Hello Cucumber
+[2025-06-23 15:01:04] [main] INFO  com.provana.hooks.Hooks - New feature detected – restarting driver (hello.feature → login_excel.feature)
+[2025-06-23 15:01:04] [main] INFO  com.provana.utils.DriverFactory - Quitting WebDriver …
+[2025-06-23 15:01:04] [main] INFO  com.provana.utils.DriverFactory - Initializing WebDriver...
+[2025-06-23 15:01:07] [main] INFO  com.provana.utils.DriverFactory - WebDriver initialized successfully.
+[2025-06-23 15:01:12] [main] ERROR com.provana.hooks.Hooks - Scenario failed: Unsuccessful login using invalid credentials
+[2025-06-23 15:01:13] [main] INFO  com.provana.hooks.TestSuiteHooks - Extent Report flushed successfully.
+[2025-06-23 15:01:13] [main] INFO  com.provana.utils.DriverFactory - Quitting WebDriver …
+[2025-06-23 15:01:14] [main] INFO  com.provana.hooks.TestSuiteHooks - Driver quit (suite-level).
